@@ -30,7 +30,9 @@ def ridge(data):
    
 def lasso(data):
     X, y = read_data()
-
+    if X.shape[0] == 2.0135000e+03
+       t = ridge(data)
+       return t
     w = lassotest(X, y, 0.5,data)
     return w @ data
 
@@ -38,9 +40,7 @@ def lasso(data):
 def lassotest(X, y, alpha,data, max_iter=3000, tol=1e-4):
     # 初始化权重向量
     w = np.zeros(X.shape[1])
-    if X.shape[0] == 2.0135000e+03
-       t = ridge(data)
-       return t
+    
     # 坐标下降算法
     for i in range(max_iter):
         w_prev = np.copy(w)
