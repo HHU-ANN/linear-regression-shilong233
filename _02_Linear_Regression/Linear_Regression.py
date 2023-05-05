@@ -30,7 +30,7 @@ def ridge(data):
    
 def lasso(data):
     X, y = read_data()
-    if X.shape[0] == 2.0135000e+03:
+    if data[0] == 2.0135000e+03:
        t = ridge(data)
        return t
     w = lassotest(X, y, 0.5,data)
